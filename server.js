@@ -10,7 +10,7 @@ console.log('connected');
 
 const io = require("socket.io")(3001, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://ps-docs-clone.netlify.app/",
     methods: ["GET", "POST"],
   },
 })
