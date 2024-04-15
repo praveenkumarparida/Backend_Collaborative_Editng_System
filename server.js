@@ -8,9 +8,9 @@ mongoose.connect("mongodb+srv://root:root@cluster0.6skciju.mongodb.net/"
 )
 console.log('connected');
 
-const io = require("socket.io")("https://backend-collaborative-editng-system.onrender.com", {
+const io = require("socket.io")(3001, {
   cors: {
-    origin: "https://ps-docs-clone.netlify.app/",
+    origin: "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 })
